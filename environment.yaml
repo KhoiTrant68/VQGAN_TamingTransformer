@@ -1,0 +1,25 @@
+name: vqgan
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python
+  - pip
+  - cudatoolkit
+  - pytorch
+  - torchvision
+  - numpy
+  - pip:
+    - albumentations
+    - opencv-python
+    - pudb
+    - imageio
+    - imageio-ffmpeg
+    - pytorch-lightning
+    - omegaconf
+    - test-tube
+    - streamlit
+    - einops
+    - more-itertools
+    - transformers
+    - -e .
