@@ -56,7 +56,6 @@ We describe below how to use this script to sample from the ImageNet, FFHQ, and 
 respectively.
 
 ### S-FLCKR
-![teaser](assets/sunset_and_ocean.jpg)
 
 You can also [run this model in a Colab
 notebook](https://colab.research.google.com/github/CompVis/taming-transformers/blob/master/scripts/taming-transformers.ipynb),
@@ -70,7 +69,7 @@ streamlit run scripts/sample_conditional.py -- -r logs/2020-11-09T13-31-51_sflck
 ```
 
 ### ImageNet
-![teaser](assets/imagenet.png)
+
 
 Download the [2021-04-03T19-39-50_cin_transformer](https://k00.fr/s511rwcv)
 folder and place it into logs.  Sampling from the class-conditional ImageNet
@@ -111,7 +110,7 @@ to sample from the CelebA-HQ model.
 For both models it can be advantageous to vary the top-k/top-p parameters for sampling.
 
 ### FacesHQ
-![teaser](assets/faceshq.jpg)
+
 
 Download [2020-11-13T21-41-45_faceshq_transformer](https://k00.fr/qqfl2do8) and
 place it into `logs`. Follow the data preparation steps for
@@ -121,7 +120,7 @@ streamlit run scripts/sample_conditional.py -- -r logs/2020-11-13T21-41-45_faces
 ```
 
 ### D-RIN
-![teaser](assets/drin.jpg)
+
 
 Download [2020-11-20T12-54-32_drin_transformer](https://k00.fr/39jcugc5) and
 place it into `logs`. To run the demo on a couple of example depth maps
@@ -156,7 +155,6 @@ streamlit run scripts/sample_conditional.py -- -r logs/2020-11-20T21-45-44_ade20
 ```
 
 ## Scene Image Synthesis
-![teaser](assets/scene_images_samples.svg)
 Scene image generation based on bounding box conditionals as done in our CVPR2021 AI4CC workshop paper [High-Resolution Complex Scene Synthesis with Transformers](https://arxiv.org/abs/2105.06458) (see talk on [workshop page](https://visual.cs.brown.edu/workshops/aicc2021/#awards)). Supporting the datasets COCO and Open Images.
 
 ### Training
@@ -333,8 +331,7 @@ The reconstruction and compression capabilities of different fist stage models c
 In particular, the notebook compares two VQGANs with a downsampling factor of f=16 for each and codebook dimensionality of 1024 and 16384, 
 a VQGAN with f=8 and 8192 codebook entries and the discrete autoencoder of OpenAI's [DALL-E](https://github.com/openai/DALL-E) (which has f=8 and 8192 
 codebook entries).
-![firststages1](assets/first_stage_squirrels.png)
-![firststages2](assets/first_stage_mushrooms.png)
+
 
 ### Other
 - A [video summary](https://www.youtube.com/watch?v=o7dqGcLDf0A&feature=emb_imp_woyt) by [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg).
