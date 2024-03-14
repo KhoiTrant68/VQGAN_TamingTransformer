@@ -8,6 +8,10 @@ more-itertools
 numpy
 packaging
 pudb
-pytorch-lightning
+pytorch-lightning==1.06
 test-tube
 transformers
+lazy_loader 
+joblib 
+threadpoolctl
+academictorrents
