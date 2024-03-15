@@ -13,7 +13,7 @@ import logging
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from transformers import top_k_top_p_filtering
+from transformers.generation.utils  import top_k_top_p_filtering
 
 logger = logging.getLogger(__name__)
 
@@ -344,7 +344,7 @@ class CodeGPT(nn.Module):
         ]  # each position maps to a (learnable) vector
         x = self.drop(token_embeddings + position_embeddings)
         x = self.blocks(x)
-        x = self.taming_cinln_f(x)
+        x = self.ln_f(x)
         logits = self.head(x)
 
         # if we are given some desired targets also calculate the loss
